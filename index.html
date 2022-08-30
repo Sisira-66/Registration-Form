@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Registration-Form</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"crossorigin="anonymous">
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+                    <!--------------- Navbar --------------->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./img/logo.jpg" alt=""width="35" height="28" class="d-inline-block align-text-top">Coders Website</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+               aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">About</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Sign-Up</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+                      </li>
+                      
+                </ul>
+              </div>
+            </div>
+          </nav>
+                            <!--------------- Header --------------->
+          <div class="jumbotron">
+            <h1 class="display-3 head">Coders Website</h1><br>
+            <div class="text"><p class="lead">This Website is to help the upcoming programmers with the code.
+            we are providing the most efficient code or snippets as the code wants to be simple.</p>
+            <hr>
+            <h5>Here programmers can build-up concepts in different programming languages that includes :<br> C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</h5>
+            <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+            <h3 class="request-registration">Please Signup/Login below to Start Coding...</h3>
+          </div>
+          </div>
+                                 <!--------------- Registration-Form --------------->
+        <div class="whole-page">
+         <div class="container">
+            <form class="row g-3 registration-form" id="val-form" novalidate>
+                <div class="alert alert-success alert-dismissible fade show val-alert col-md-8 " role="alert" id="val-alert-success">
+                    Registration Successfull ✅
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                <div class="alert alert-danger alert-dismissible fade show val-alert col-md-8" role="alert"id="val-alert-fail">
+                    ❌ Registration Failed !
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+
+                <div class="col-md-6">
+                  <label for="val-firstname" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="val-firstname" autocomplete="off">
+                  <div class="valid-feedback"id="firstname-valid">
+                    Looks good ✅
+                  </div>
+                  <div class="invalid-feedback"id="firstname-invalid">
+                    ❗Please provide a valid firstname.
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="val-lastname" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="val-lastname" autocomplete="off">
+                  <div class="valid-feedback" id="lastname-valid">
+                    Looks good ✅
+                  </div>
+                  <div class="invalid-feedback" id="lastname-invalid">
+                    ❗Please provide a valid lastname.
+                  </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <label for="val-email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                      <input type="email" class="form-control" id="val-email"
+                       aria-describedby="inputGroupPrepend" autocomplete="off">
+                       <div class="valid-feedback"id="email-valid">
+                        Looks good ✅
+                      </div>
+                      <div class="invalid-feedback"id="email-invalid">
+                        ❗Please enter a valid Email-address.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="val-phone" class="form-label">Phone Number</label>
+                    <div class="input-group has-validation">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">+91</span>
+                        </div>
+                      <input type="text" class="form-control" id="val-phone" 
+                      aria-describedby="inputGroupPrepend" autocomplete="off">
+                      <div class="valid-feedback"id="phone-valid">
+                        Looks good ✅
+                      </div>
+                      <div class="invalid-feedback"id="phone-invalid">
+                        ❗Please enter a valid Phone-Number.
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                  <label for="val-batch" class="form-label">Batch No</label>
+                  <select class="form-select" id="val-batch" required>
+                    <option selected disabled value="None">Select Batch No</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                  </select>
+                  <div class="valid-feedback"id="batch-valid">
+                     ✅
+                  </div>
+                  <div class="invalid-feedback"id=batch-invalid>
+                    ❗Please select a Batch-Number.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="val-module" class="form-label">Current Module</label>
+                    <select class="form-select" id="val-module" required>
+                      <option selected disabled value="None">Select Current Module...</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                    </select>
+                    <div class="valid-feedback"id="module-valid">
+                        ✅
+                      </div>
+                    <div class="invalid-feedback" id="module-invalid">
+                      ❗Please select your Current Module.
+                    </div>
+                  </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tnC">
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback" id="check-box-invalid">
+                    ❗You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 submit-btn">
+                  <button class="btn btn-primary"onclick="valid()" type="button">Submit form</button>
+                </div>
+              </form>
+        </div>
+    </div>
+            <div class="img">
+            <img src="./img/footer.png" alt="footer-image" width="100%"></div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+            integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+            crossorigin="anonymous"></script>
+                    
+            <script src="script.js"></script>
+    </body>
+</html>
