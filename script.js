@@ -42,7 +42,7 @@ function valid(){
 
     if(email.includes('@') &&
         email.indexOf('@') <= email.length -2 &&
-        email.indexOf('@')>1
+        email.indexOf('@')>1 && email.includes('.')
         && email.indexOf('.') + 3 <= email.length){
         document.getElementById('email-valid').style.display = 'block';
         document.getElementById('email-invalid').style.display = 'none';
