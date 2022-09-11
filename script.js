@@ -52,7 +52,12 @@ function valid(){
         errors = true;
     }
 
-    if(phone.length ==10 && !isNaN(parseInt(phone))){
+    function isNum(phone){
+        var num = parseInt(phone)
+        var length = num.toString().length == phone.length
+        return length
+    }
+    if(!isNaN(phone.length == 10) && isNum(phone)){
         document.getElementById('phone-valid').style.display = 'block';
         document.getElementById('phone-invalid').style.display = 'none';
     }else{
